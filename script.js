@@ -1,5 +1,5 @@
 const HF_API_TOKEN = "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"; // Replace with your Hugging Face API Token
-const MODEL_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2";
+const MODEL_URL = "https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE";
 
 async function generateImages() {
     let prompt = document.getElementById("textInput").value;
