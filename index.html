@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Generator</h1>
+        
+        <textarea id="textInput" placeholder="Enter a prompt..."></textarea>
+        
+        <label for="numImages">Number of Images:</label>
+        <select id="numImages">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="nsfwToggle"> Allow NSFW Content
+        </label>
+
+        <button onclick="generateImages()">Generate Image</button>
+
+        <div id="loading" style="display: none;">Generating...</div>
+        
+        <div id="imageContainer"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
